@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación A Medorra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #3856bb;
+            --secondary: #1E3A8A;
+            --accent: #3c91f1;
+            --light: #F3F4F6;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('/webroot/media/amedorra/am_1.png') center/cover no-repeat;
+            height: 80vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .logo-container {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .festival-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- menu de navegacion -->
+    <nav class="bg-black shadow-lg sticky top-0 z-50 backdrop-blur-sm bg-opacity-90">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="logo-container">
+                    <img src="/webroot/media/fam/logoFAM.png"
+                        alt="Logo Fundación A Medorra - Cultura y tradición gallega"
+                        class="h-16 md:h-20 object-contain transition-transform hover:scale-105" />
+                </div>
+                <div class="hidden md:flex space-x-10">
+                    <a href="#about" class="text-blue-800 hover:text-sky-600 transition font-medium">Quiénes Somos</a>
+                    <a href="#festivals" class="text-blue-800 hover:text-sky-600 transition">Fiestas A Medorra</a>
+                    <a href="#collaborate" class="text-blue-800 hover:text-sky-600 transition">Colabora</a>
+                    <a href="#blog" class="text-blue-800 hover:text-sky-600 transition">Blog</a>
+                    <a href="#multimedia" class="text-blue-800 hover:text-sky-600 transition">Multimedia</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container px-6 relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 font-serif tracking-tight">Fundación A Medorra</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">Promoviendo la diversión entre todas
+                las edades.</p>
+            <a href="#about"
+                class="bg-blue-700 hover:bg-sky-800 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 inline-block transform hover:scale-105 shadow-lg">
+                Conócenos
+                <svg class="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ac1fcbd-5978-44ba-bbae-c2643f4037b7.png"
+                        alt="Equipo de la Fundación A Medorra" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif mb-6">¿Qué es la Fundación A Medorra?</h2>
+                    <div class="w-20 h-1 bg-red-700 mb-8"></div>
+                    <p class="text-lg mb-6">
+                        La Fundación A Medorra es una organización dedicada a la promoción de eventos en la localidad de
+                        A Medorra.
+                        Desde 2024 organizamos actividades culturales, fiestas tradicionales y proyectos diversos.
+                    </p>
+                    <p class="text-lg mb-8">
+                        Nuestro trabajo incluye la producción audiovisual de eventos culturales, con varios vídeos en
+                        nuestro canal de YouTube que muestran la riqueza de
+                        nuestras tradiciones además de los eventos que hemos realizado.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@AMedorra24"
+                            class="flex items-center text-red-700 font-medium">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                            Ver Canal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festivals Section -->
+    <section id="festivals" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-4">Fiestas de A Medorra 2025</h2>
+                <div class="w-20 h-1 bg-red-700 mx-auto mb-12"></div>
+                <p class="text-xl max-w-3xl mx-auto mb-12">
+                    Las fiestas de A Medorra se celebrarán del 11 al 13 de agosto de 2025 en la Rúa Angelita Pérez
+                    Pérez, O Pereiro de Aguiar (Ourense).
+                    Todo gracias a la organización de la Fundación A Medorra.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Day 1 -->
+                <div
+                    class="festival-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <div
+                        class="h-48 bg-gradient-to-r from-red-600 to-red-800 flex items-center justify-center relative overflow-hidden">
+                        <h4 class="text-4xl font-bold text-white z-10">11 de Agosto</h4>
+                        <div class="absolute inset-0 bg-black opacity-10"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Actividades</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>12:00 h – Mercadillo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>19:00 h – Mercadillo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>19:30 h – Bingo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>20:55 h – Música con mini-DJ y comida en la plaza del pueblo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="festival-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-red-100 flex items-center justify-center">
+                        <h4 class="text-4xl font-bold text-red-700">12 de Agosto</h4>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Actividades</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>11:00 h – Taller de cocina para pequeños (6–10 años)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>12:00 h – Mercadillo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>19:00 h – Bingo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="festival-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-red-100 flex items-center justify-center">
+                        <h4 class="text-4xl font-bold text-red-700">13 de Agosto</h4>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Actividades</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>12:00 h – Mercadillo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>19:00 h – Bingo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>21:00 h – DJ y comida en la plaza del pueblo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-700 mr-2">•</span>
+                                <span>22:00 h – Espectáculo pirotécnico de petardos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-4">Contacta con Nosotros</h2>
+                <div class="w-20 h-1 bg-red-700 mx-auto mb-8"></div>
+                <p class="text-lg mb-6">Rellena el formulario para colaborar, ser voluntario o hacer cualquier consulta
+                </p>
+            </div>
+
+            <form id="contactForm" class="space-y-6" action="https://formspree.io/f/[YOUR-FORMSPREE-ID]" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo mensaje del sitio web">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="block text-gray-700 font-medium mb-2">Asunto</label>
+                    <select id="subject" name="subject" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="voluntariado">Ser voluntario</option>
+                        <option value="donacion">Hacer una donación</option>
+                        <option value="informacion">Solicitar información</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"></textarea>
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" id="privacy" name="privacy" required
+                        class="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500">
+                    <label for="privacy" class="ml-2 text-sm text-gray-600">
+                        Acepto la <a href="#" class="text-red-600 hover:underline">Política de Privacidad</a>
+                    </label>
+                </div>
+
+                <button type="submit"
+                    class="w-full md:w-auto bg-red-700 hover:bg-red-800 text-white font-bold py-4 px-8 rounded-lg transition duration-300 shadow-lg hover:shadow-xl">
+                    Enviar Mensaje
+                </button>
+                <!-- Add spam prevention and redirection -->
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_next" value="[YOUR-WEBSITE-URL]/gracias.html">
+                <input type="hidden" name="_language" value="es">
+            </form>
+            <!-- Add JS for form handling -->
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Basic validation
+                    const form = this;
+                    const requiredFields = form.querySelectorAll('[required]');
+                    let isValid = true;
+
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            field.classList.add('border-red-500');
+                            isValid = false;
+                        } else {
+                            field.classList.remove('border-red-500');
+                        }
+                    });
+
+                    if (isValid) {
+                        // Show loading state
+                        const submitBtn = form.querySelector('button[type="submit"]');
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = 'Enviando...';
+
+                        // Submit form
+                        fetch(form.action, {
+                            method: 'POST',
+                            body: new FormData(form),
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        })
+                            .then(response => {
+                                if (response.ok) {
+                                    window.location.href = form.querySelector('input[name="_next"]').value;
+                                } else {
+                                    alert('Error al enviar el formulario');
+                                    submitBtn.disabled = false;
+                                    submitBtn.innerHTML = 'Enviar Mensaje';
+                                }
+                            })
+                            .catch(error => {
+                                alert('Error de conexión');
+                                submitBtn.disabled = false;
+                                submitBtn.innerHTML = 'Enviar Mensaje';
+                            });
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-4">Blog</h2>
+                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
+                <p class="text-lg mb-6">
+                    Mantente al día con nuestras últimas noticias, reseñas y novedades sobre la Fundación A Medorra.
+                </p>
+                <a href="#"
+                    class="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Leer
+                    Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section id="multimedia" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-4">Multimedia</h2>
+                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
+                <p class="text-lg mb-6">
+                    Explora nuestro canal de YouTube y disfruta de nuestros vídeos, trailers y documentales.
+                </p>
+                <a href="https://www.youtube.com/@AMedorra24"
+                    class="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Visita
+                    Nuestro Canal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 border-t-8 border-red-700">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <div class="logo-container mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4a205ca1-b8b4-4b08-9fe6-4945b8533696.png"
+                            alt="Logo Fundación A Medorra" class="h-16">
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Desarrollado con ♡ por
+                        <a href="https://portfolioirene.vercel.app/"
+                            class="text-blue-400 hover:text-white transition-colors duration-300">
+                            Irene Rodríguez Rodríguez
+                        </a>
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@AMedorra24" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-2 grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Enlaces</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">Quiénes Somos</a>
+                            </li>
+                            <li><a href="#festivals" class="text-gray-400 hover:text-white transition">Fiestas</a></li>
+                            <li><a href="#collaborate" class="text-gray-400 hover:text-white transition">Colabora</a>
+                            </li>
+                            <li><a href="#blog" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Aviso Legal</a></li>
+                            <a href="#" class="hover:text-red-400 transition">Política de Privacidad</a>
+                            <a href="#" class="hover:text-red-400 transition">Cookies</a>
+                    </div>
+                    <p class="text-gray-400 text-sm">© 2024 - 2025 Fundación A Medorra. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('button.md\\:hidden').addEventListener('click', function () {
+            const menu = document.querySelector('.hidden.md\\:flex');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
